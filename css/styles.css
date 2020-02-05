@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#homePage {
+    padding-top: 80px;
+    background-image: url('../img/bg1.svg');
+    background-repeat: repeat;
+}
+
+#aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+}
+
+#projectsPage, #contactPage, #aboutPage {
+    background-color: white;
+}
+
+#homePage, #aboutPage, #projectsPage, #contactPage {
+    height: 100vh;
+    width: 100%;
+}
+
+#global-nav {
+    height: 80px;
+    -webkit-transition: height .5s, line-height .5s;
+    transition: height .5s, line-height .5s;
+}
+
+.scrolled-nav {
+    height: 60px !important;
+}
+
+.navbar-nav li {
+    padding-right: 50px;
+    font-size: 1.1rem;
+}
+
+.hero {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heroLeft {
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+}
+
+.heroRight {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+span h1:first-child {
+    color: #5c5c5c;
+    font-weight: bold;
+}
+
+span h1:last-child {
+    color: #5c5c5c;
+    font-weight: lighter;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.TextAbout {
+    width: 50vw;
+    line-height: 2.5;
+    text-align: justify;
+    margin-top: 20vh;
+    text-indent: 50px;
+    z-index: 1;
+}
+
+.arrowImage {
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* Hover Animation */
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    position: relative;
+    outline: none;
+}
+
+.navbar-nav li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #5e3094;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.navbar-nav li>a:hover:before, .navbar-nav li>a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* End Hover Animation*/
+
+.project {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.counter {
+    width: 20px;
+    height: 20px;
+    background: black;
+    color: #fff;
+    position: fixed;
+    top: 120px;
+    right: 0;
+}
+
+.portfolioImage {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 250px;
+    transition: all 2s ease-in-out;
+}
+
+.portfolioImage:hover {
+    transform: scale(1.25, 1.25)
+}
+
+.social {
+    transition: all 1s ease-in-out;
+}
